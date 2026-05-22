@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: dao.EtudiantDAOTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.361 s <<< FAILURE! -- in dao.EtudiantDAOTest
+dao.EtudiantDAOTest.testInsertAndFindEtudiant -- Time elapsed: 0.249 s <<< ERROR!
+java.lang.RuntimeException: Erreur lors de l'enregistrement de l'étudiant.
+	at dao.EtudiantDAO.saveOrUpdateEtudiant(EtudiantDAO.java:85)
+	at dao.EtudiantDAOTest.testInsertAndFindEtudiant(EtudiantDAOTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.postgresql.util.PSQLException: FATAL: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �
+		at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+		at org.postgresql.Driver.makeConnection(Driver.java:443)
+		at org.postgresql.Driver.connect(Driver.java:297)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at dao.DBConnection.getConnection(DBConnection.java:34)
+		at dao.EtudiantDAOTest.tearDown(EtudiantDAOTest.java:33)
+		... 3 more
+Caused by: org.postgresql.util.PSQLException: FATAL: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at dao.DBConnection.getConnection(DBConnection.java:34)
+	at dao.EtudiantDAO.saveOrUpdateEtudiant(EtudiantDAO.java:76)
+	... 4 more
+
+dao.EtudiantDAOTest.testUpdateEtudiant -- Time elapsed: 0.108 s <<< ERROR!
+java.lang.RuntimeException: Erreur lors de l'enregistrement de l'étudiant.
+	at dao.EtudiantDAO.saveOrUpdateEtudiant(EtudiantDAO.java:85)
+	at dao.EtudiantDAOTest.testUpdateEtudiant(EtudiantDAOTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.postgresql.util.PSQLException: FATAL: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �
+		at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+		at org.postgresql.Driver.makeConnection(Driver.java:443)
+		at org.postgresql.Driver.connect(Driver.java:297)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+		at dao.DBConnection.getConnection(DBConnection.java:34)
+		at dao.EtudiantDAOTest.tearDown(EtudiantDAOTest.java:33)
+		... 3 more
+Caused by: org.postgresql.util.PSQLException: FATAL: authentification par mot de passe �chou�e pour l'utilisateur  � postgres �
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at dao.DBConnection.getConnection(DBConnection.java:34)
+	at dao.EtudiantDAO.saveOrUpdateEtudiant(EtudiantDAO.java:76)
+	... 4 more
+

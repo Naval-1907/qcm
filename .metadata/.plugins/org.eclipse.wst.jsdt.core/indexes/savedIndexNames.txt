@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\LENOVO X390\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2281920194.index
+2635252363.index
+409870116.index
+3783786566.index
+1438195114.index
+1999182107.index
